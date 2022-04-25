@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A simplified version of a mini game originally written in AS3.">
+        <meta name="author" content="Henrique Rodrigues de Uzêda">
+        <meta property="og:title" content="Museu da Vida">
+        <meta property="og:image" content="assets/screenshot.png">
+        <meta property="og:description" content="A simplified version of a mini game originally written in AS3.">
+        
+        <title>HTML5 test</title>
+        <script type='text/javascript' src='js/jquery-1.9.1.min.js'></script>
+        <script type='text/javascript' src='js/easeljs-0.6.0.min.js'></script>
+        
+        <!-- ENGINE FILES -->
+        <script type='text/javascript' src="js/mstech/Constants.js"></script>
+        
+        <script type='text/javascript' src='js/mstech/entity/Interactable.js'></script>
+        <script type='text/javascript' src='js/mstech/entity/Node.js'></script>
+        <script type='text/javascript' src='js/mstech/entity/Tile.js'></script>
+        <script type='text/javascript' src='js/mstech/entity/Map.js'></script>
+        
+        <script type='text/javascript' src='js/mstech/singleton/Mapped.js'></script>
+        <script type='text/javascript' src='js/mstech/singleton/Player.js'></script>
+        <script type='text/javascript' src='js/mstech/singleton/PlayerHandler.js'></script>
+        
+        <script type='text/javascript' src="js/mstech/TileGame.js"></script>
+        <!-- /ENGINE FILES -->
+        
+        <style>*{margin:0; padding:0;} body{background:#333;} canvas{background:#eee; display:block; margin:auto;}</style>
+    </head>
+
+    <body onload="(new TileGame()).init();">
+    </body>
+</html>
